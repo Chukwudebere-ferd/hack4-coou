@@ -58,13 +58,12 @@ export function MentorsSection() {
             </div>
           ))}
         </div>
-
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="flex items-center gap-2 text-[#13ec80] font-bold hover:text-white transition-colors group">
             <span>View All Mentors</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

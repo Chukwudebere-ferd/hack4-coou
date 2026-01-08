@@ -83,8 +83,8 @@ export function WhyParticipateSection() {
                 width={600}
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#0B0C10] via-transparent to-transparent opacity-80"></div>
-              <div className="absolute bottom-6 left-60 right-6 z-20">
-                <p className="text-white font-bold text-lg">"The best workshop of my college life."</p>
+              <div className="absolute bottom-6 left-40 right-6 z-20">
+                <p className="text-white font-bold text-lg">"Hack4COOU is a platform where students on COOU Campus are solving real problems with technology."</p>
                 <p className="text-[#13ec80] text-sm mt-1">- Blessing Emejulu (GDG COOU Lead Organizer)</p>
               </div>
             </div>

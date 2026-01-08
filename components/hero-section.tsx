@@ -5,11 +5,10 @@ import { Button } from "@/components/ui/button"
 import { heroData } from "@/data/hero-data"
 
 interface HeroSectionProps {
-  onRegisterClick: () => void
   onScheduleClick: () => void
 }
 
-export function HeroSection({ onRegisterClick, onScheduleClick }: HeroSectionProps) {
+export function HeroSection({ onScheduleClick }: HeroSectionProps) {
   const [timeLeft, setTimeLeft] = useState({
     months: 0,
     days: 0,
@@ -81,12 +80,14 @@ export function HeroSection({ onRegisterClick, onScheduleClick }: HeroSectionPro
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Button
-                onClick={onRegisterClick}
-                className="h-12 px-8 rounded-full bg-[#13ec80] text-[#0B0C10] font-bold text-base hover:shadow-[0_0_20px_-5px_rgba(19,236,128,0.4)] transition-all hover:-translate-y-1 active:translate-y-0 w-full sm:w-auto"
+              <a
+                href={heroData.registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-12 px-8 rounded-full bg-[#13ec80] text-[#0B0C10] font-bold text-base hover:shadow-[0_0_20px_-5px_rgba(19,236,128,0.4)] transition-all hover:-translate-y-1 active:translate-y-0 w-full sm:w-auto flex items-center justify-center"
               >
                 {heroData.ctaText}
-              </Button>
+              </a>
               <Button
                 onClick={onScheduleClick}
                 variant="outline"

@@ -64,6 +64,8 @@ export function TrainingSection() {
               <p className="text-gray-400 text-sm leading-relaxed mb-6">{course.description}</p>
               <div className="mt-auto flex flex-col gap-3">
                 <a
+                  href={course.link}
+                  target="_blank"
                   className={`inline-flex items-center gap-2 ${course.color} font-bold text-sm tracking-wide uppercase hover:underline underline-offset-4 group/link`}
                 >
                   Register Now{" "}

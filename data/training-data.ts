@@ -6,6 +6,7 @@ export interface TrainingCourse {
   color: string
   hoverColor: string
   accentColor: string
+  link: string
 }
 
 export const trainingCourses: TrainingCourse[] = [
@@ -18,6 +19,7 @@ export const trainingCourses: TrainingCourse[] = [
     color: "text-[#13ec80]",
     hoverColor: "group-hover:text-[#13ec80]",
     accentColor: "#13ec80",
+    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-artificial-intelligence-amp-machine-learning/",
   },
   {
     id: "2",
@@ -28,15 +30,17 @@ export const trainingCourses: TrainingCourse[] = [
     color: "text-blue-400",
     hoverColor: "group-hover:text-blue-400",
     accentColor: "blue",
+    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-flutter-mobile-app-development/",
   },
   {
     id: "3",
-    title: "Website Development",
+    title: "Fullstack Website Development",
     description:
       "Craft the web of tomorrow. From modern frontend frameworks like React to robust backend APIs, get the full-stack skills needed to deploy live.",
     icon: "code",
     color: "text-purple-400",
     hoverColor: "group-hover:text-purple-400",
     accentColor: "purple",
+    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-full-stack-web-development/",
   },
 ]

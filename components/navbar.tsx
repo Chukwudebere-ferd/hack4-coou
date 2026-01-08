@@ -38,12 +38,15 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Register Button */}
-          <Link href="/#">
+          <a
+            href="https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-innovate-amp-build/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="hidden md:inline-flex items-center justify-center px-6 py-2 rounded-full bg-[#13ec80] text-[#0B0C10] font-bold text-sm hover:bg-[#0fd970] transition-colors">
               Register
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

@@ -10,4 +10,15 @@ export const sponsors: Sponsor[] = [
     name: "NACOS COOU",
     logo: "/images/image.png",
   },
+  {
+    id: "2",
+    name: "WOMEN IN DEFI",
+    logo: "/images/women-in-defi.jpg",
+  },
+  {
+    id: "3",
+    name: "GDGOC COOU",
+    logo: "/images/gdg.jpg",
+  },
 ]
+

@@ -27,6 +27,9 @@ export function SponsorsSection() {
                 alt={sponsor.name}
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform"
               />
+              <h1 className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                {sponsor.name}
+              </h1>
             </div>
           ))}
         </div>

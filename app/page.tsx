@@ -1,8 +1,4 @@
 "use client"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import RegistrationModal from "@/components/registration-modal"
 import { AboutSection } from "@/components/about-section"
 import { WhyParticipateSection } from "@/components/why-participate-section"
 import { WhoCanParticipateSection } from "@/components/who-can-participate-section"
@@ -17,10 +13,9 @@ import { FAQSection } from "@/components/faq-section"
 import { FooterSection } from "@/components/footer-section"
 
 export default function HackathonLanding() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const openModal = () => setIsModalOpen(true)
-  const closeModal = () => setIsModalOpen(false)
+  // const [isModalOpen, setIsModalOpen] = useState(false)
+  // const openModal = () => setIsModalOpen(true)
+  // const closeModal = () => setIsModalOpen(false)
 
   const scrollToSchedule = () => {
     const scheduleSection = document.getElementById("schedule")
@@ -68,12 +63,14 @@ export default function HackathonLanding() {
 
             {/* CTA Button */}
             <div className="hidden md:flex">
-              <Button
-                onClick={openModal}
-                className="bg-[#13ec80] hover:bg-[#13ec80]/90 text-[#0B0C10] font-bold shadow-[0_0_20px_-5px_rgba(19,236,128,0.4)] hover:shadow-[0_0_30px_-5px_rgba(19,236,128,0.6)] transition-all rounded-full pl-8 pr-8"
+              <a
+                href="https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-innovate-amp-build/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#13ec80] hover:bg-[#13ec80]/90 text-[#0B0C10] font-bold shadow-[0_0_20px_-5px_rgba(19,236,128,0.4)] hover:shadow-[0_0_30px_-5px_rgba(19,236,128,0.6)] transition-all rounded-full pl-8 pr-8 py-2 inline-flex items-center"
               >
                 Register
-              </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -89,7 +86,7 @@ export default function HackathonLanding() {
       </nav>
 
       {/* Hero Section */}
-      <HeroSection onRegisterClick={openModal} onScheduleClick={scrollToSchedule} />
+      <HeroSection onScheduleClick={scrollToSchedule} />
 
       {/* About Section */}
       <AboutSection />
@@ -118,7 +115,7 @@ export default function HackathonLanding() {
       {/* Timeline Section */}
       <TimelineSection />
 
-      <RegistrationModal isOpen={isModalOpen} onClose={closeModal} />
+      {/* <RegistrationModal isOpen={isModalOpen} onClose={closeModal} /> */}
 
       {/* Team Section */}
       <TeamSection />
