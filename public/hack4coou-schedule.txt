@@ -1,0 +1,70 @@
+HACK4COOU 1.0 - EVENT SCHEDULE
+================================
+
+📅 Date: May 15-17, 2026
+📍 Location: COOU Campus, Uli, Nigeria
+
+DAY 1 - FRIDAY, MAY 15, 2026
+-----------------------------
+08:00 AM - Registration & Check-in
+09:00 AM - Opening Ceremony
+         • Welcome Address
+         • Introduction to Judges & Sponsors
+         • Hackathon Rules & Guidelines
+10:30 AM - Team Formation & Networking
+11:00 AM - Hacking Officially Begins!
+01:00 PM - Lunch Break
+02:00 PM - Workshop: Introduction to AI/ML Tools
+04:00 PM - Continue Hacking
+07:00 PM - Dinner & Mentor Sessions
+09:00 PM - Late Night Hacking
+
+DAY 2 - SATURDAY, MAY 16, 2026
+-------------------------------
+08:00 AM - Breakfast
+09:00 AM - Workshop: Web3 & Blockchain Basics
+11:00 AM - Mid-Point Check-ins with Mentors
+01:00 PM - Lunch Break
+02:00 PM - Workshop: Pitch & Presentation Skills
+04:00 PM - Continue Hacking
+07:00 PM - Dinner & Networking Session
+09:00 PM - Midnight Push - Final Development Sprint
+
+DAY 3 - SUNDAY, MAY 17, 2026
+-----------------------------
+08:00 AM - Breakfast
+09:00 AM - Final Development Hours
+11:00 AM - Code Freeze - No More Coding!
+11:30 AM - Lunch Break
+12:30 PM - Project Submissions Deadline
+01:00 PM - Team Presentations Begin
+03:00 PM - Judging & Deliberation
+04:00 PM - Closing Ceremony & Awards
+         • Winner Announcements
+         • Prize Distribution
+         • Photo Session
+05:30 PM - Event Wrap-up
+
+COMPETITION TRACKS
+------------------
+🤖 AI & Machine Learning
+🌐 Web3 & Blockchain
+💚 Health & Wellness
+🎓 Education Technology
+
+PRIZES
+------
+🥇 1st Place: ₦500,000
+🥈 2nd Place: ₦300,000
+🥉 3rd Place: ₦150,000
+
+Plus track-specific awards and sponsor prizes!
+
+CONTACT
+-------
+📧 Email: hack4coou@example.com
+🌐 Website: hack4coou.com
+📱 Social: @hack4coou
+
+Organized by NACOS COOU
+Powered by Innovation & Community
