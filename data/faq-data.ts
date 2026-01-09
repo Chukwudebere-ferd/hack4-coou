@@ -9,7 +9,7 @@ export const faqs: FAQ[] = [
     id: "1",
     question: "Who can participate?",
     answer:
-      "Hack4COOU is open to all university students, recent graduates, and tech enthusiasts. You don't need to be a pro coder. Designers and project managers are welcome too!",
+      "Hack4COOU is open to all COOU university students and tech enthusiasts. You don't need to be a pro coder. Designers and project managers are welcome too!",
   },
   {
     id: "2",
@@ -21,6 +21,6 @@ export const faqs: FAQ[] = [
     id: "3",
     question: "Can I apply as a team?",
     answer:
-      "Yes! You can form teams of 2-4 members. If you don't have a team yet, don't worry—we'll have a team-building session at the start of the event.",
+      "Yes! You can form teams of 2-4 members. If you don't have a team yet, don't worry. We'll have a team-building session at the start of the event.",
   },
 ]

@@ -38,9 +38,9 @@ export function TimelineSection() {
             <p className="text-gray-400">A roadmap of the 48-hour journey at COOU Campus, Uli.</p>
           </div>
           <a
-            href="/hack4coou-schedule.txt"
-            download="Hack4COOU_Schedule.txt"
-            className="text-sm font-bold text-[#13ec80] flex items-center gap-2 hover:underline group"
+            href="/Hack4Coou-Event-Schedule.pdf"
+            download="Hack4Coou-Event-Schedule.pdf"
+            className="text-sm font-bold text-[#13ec80] flex items-center gap-2"
           >
             Download Schedule
             <svg

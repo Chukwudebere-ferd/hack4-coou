@@ -114,7 +114,7 @@ export const teamMembers: TeamMember[] = [
     profilePic: "/images/faith-amara-lncle8n.webp",
     category: "operations",
     social: {
-      website: "devfoma.vercel.app",
+      website: "https://devfoma.vercel.app",
       email: "faithamarachi860@gmail.com",
     },
   },

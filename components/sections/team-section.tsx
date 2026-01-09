@@ -28,7 +28,7 @@ export function TeamSection() {
               happen.
             </p>
           </div>
-          <a
+          {/* <a
             className="hidden md:flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-[#13ec80] transition-colors"
             href="/team-details"
           >
@@ -36,7 +36,7 @@ export function TeamSection() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </a> */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member) => {

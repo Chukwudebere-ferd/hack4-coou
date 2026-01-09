@@ -25,9 +25,9 @@ export function SponsorsSection() {
               <img
                 src={sponsor.logo || "/placeholder.svg"}
                 alt={sponsor.name}
-                className="w-full h-full mb-4 md:mb-8 sm:md-8 object-contain group-hover:scale-105 transition-transform"
+                className="w-full h-full mb-8 md:mb-8 sm:md-8 object-contain group-hover:scale-105 transition-transform"
               />
-              <h1 className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-100 group-hover:text-[#13ec80] transition-opacity">
+              <h1 className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 opacity-100 group-hover:text-[#13ec80] transition-opacity text-center">
                 {sponsor.name}
               </h1>
             </div>
