@@ -14,7 +14,7 @@ export interface FooterData {
 
 export const footerData: FooterData = {
   logoText: "Hack4COOU",
-  copyright: "2025 Hack4COOU. All rights reserved. Built with 💚 by ",
+  copyright: "2026 Hack4COOU. All rights reserved. Built with 💚 by ",
   devfoma: "https://devfoma.vercel.app",
   socialLinks: [
     {
