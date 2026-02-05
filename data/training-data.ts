@@ -19,7 +19,7 @@ export const trainingCourses: TrainingCourse[] = [
     color: "text-[#13ec80]",
     hoverColor: "group-hover:text-[#13ec80]",
     accentColor: "#13ec80",
-    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-artificial-intelligence-amp-machine-learning/",
+    link: "https://forms.gle/t2LhhwkFQcq4vg1M7",
   },
   {
     id: "2",
@@ -30,7 +30,7 @@ export const trainingCourses: TrainingCourse[] = [
     color: "text-blue-400",
     hoverColor: "group-hover:text-blue-400",
     accentColor: "blue",
-    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-flutter-mobile-app-development/",
+    link: "https://forms.gle/4QBbGqeU1FJ3XvDCA",
   },
   {
     id: "3",
@@ -41,6 +41,6 @@ export const trainingCourses: TrainingCourse[] = [
     color: "text-purple-400",
     hoverColor: "group-hover:text-purple-400",
     accentColor: "purple",
-    link: "https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-bootcamp-full-stack-web-development/",
+    link: "https://forms.gle/QNuXwxBUqdaLJgDeA",
   },
 ]
