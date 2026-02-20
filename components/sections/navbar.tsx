@@ -39,7 +39,7 @@ export function Navbar() {
           </div>
 
           <a
-            href="https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-innovate-amp-build/"
+            href="https://forms.gle/9tV4b4XNHu8jbwcQA"
             target="_blank"
             rel="noopener noreferrer"
           >
