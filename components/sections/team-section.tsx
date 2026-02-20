@@ -101,7 +101,7 @@ export function TeamSection() {
             )
           })}
         </div>
-        <div className="mt-12 p-8 rounded-2xl bg-linear-to-r from-[#15181E] to-[#0B0C10] border border-[#283930] flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* <div className="mt-12 p-8 rounded-2xl bg-linear-to-r from-[#15181E] to-[#0B0C10] border border-[#283930] flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col gap-2 text-center md:text-left">
             <h3 className="text-white text-xl font-bold">Want to join the organizing team?</h3>
             <p className="text-gray-400 text-sm">
@@ -111,7 +111,7 @@ export function TeamSection() {
           <button className="px-6 py-3 rounded-lg bg-[#15181E] border border-[#283930] text-white font-bold hover:border-[#13ec80] hover:text-[#13ec80] transition-all whitespace-nowrap">
             Apply as Volunteer!
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
