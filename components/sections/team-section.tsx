@@ -109,7 +109,7 @@ export function TeamSection() {
             </p>
           </div>
           <button className="px-6 py-3 rounded-lg bg-[#15181E] border border-[#283930] text-white font-bold hover:border-[#13ec80] hover:text-[#13ec80] transition-all whitespace-nowrap">
-            Apply as Volunteer
+            Apply as Volunteer!
           </button>
         </div>
       </div>
