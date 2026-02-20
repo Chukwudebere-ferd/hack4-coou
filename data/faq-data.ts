@@ -9,7 +9,7 @@ export const faqs: FAQ[] = [
     id: "1",
     question: "Who can participate?",
     answer:
-      "Hack4COOU is open to all COOU university students and tech enthusiasts. You don't need to be a pro coder. Designers and project managers are welcome too!",
+      "Hack4COOU is open to all COOU university students and tech enthusiasts. You don't need to be a pro coder. Designers and project managers are welcome too! No one should be left out",
   },
   {
     id: "2",
