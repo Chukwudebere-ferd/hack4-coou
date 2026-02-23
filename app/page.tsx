@@ -1,35 +1,35 @@
-"use client"
-import { useState } from "react"
-import { AboutSection } from "@/components/sections/about-section"
-import { WhyParticipateSection } from "@/components/sections/why-participate-section"
-import { WhoCanParticipateSection } from "@/components/sections/who-can-participate-section"
-import { PrizesSection } from "@/components/sections/prizes-section"
-import { SponsorsSection } from "@/components/sections/sponsors-section"
-import { TrainingSection } from "@/components/sections/training-section"
-import { MentorsSection } from "@/components/sections/mentors-section"
-import { TeamSection } from "@/components/sections/team-section"
-import { HeroSection } from "@/components/sections/hero-section"
-import { TimelineSection } from "@/components/sections/timeline-section"
-import { FAQSection } from "@/components/sections/faq-section"
-import { FooterSection } from "@/components/sections/footer-section"
+"use client";
+import { useState } from "react";
+import { AboutSection } from "@/components/sections/about-section";
+import { WhyParticipateSection } from "@/components/sections/why-participate-section";
+import { WhoCanParticipateSection } from "@/components/sections/who-can-participate-section";
+import { PrizesSection } from "@/components/sections/prizes-section";
+import { SponsorsSection } from "@/components/sections/sponsors-section";
+import { TrainingSection } from "@/components/sections/training-section";
+import { MentorsSection } from "@/components/sections/mentors-section";
+import { TeamSection } from "@/components/sections/team-section";
+import { HeroSection } from "@/components/sections/hero-section";
+import { TimelineSection } from "@/components/sections/timeline-section";
+import { FooterSection } from "@/components/sections/footer-section";
+import { AIChatbot } from "@/components/sections/ai-chatbot";
 
 export default function HackathonLanding() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // const [isModalOpen, setIsModalOpen] = useState(false)
   // const openModal = () => setIsModalOpen(true)
   // const closeModal = () => setIsModalOpen(false)
 
   const scrollToSchedule = () => {
-    const scheduleSection = document.getElementById("schedule")
+    const scheduleSection = document.getElementById("schedule");
     if (scheduleSection) {
-      scheduleSection.scrollIntoView({ behavior: "smooth" })
+      scheduleSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const handleMobileMenuClick = () => {
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-linear-to-b from-[#0a0b0f] via-[#0B0C10] to-[#0a0b0f] text-white">
@@ -40,7 +40,12 @@ export default function HackathonLanding() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="text-[#13ec80]">
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -49,22 +54,30 @@ export default function HackathonLanding() {
                   />
                 </svg>
               </div>
-              <h2 className="text-white text-xl font-bold tracking-tight">Hack4COOU</h2>
+              <h2 className="text-white text-xl font-bold tracking-tight">
+                Hack4COOU
+              </h2>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              <a className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium" href="#about">
+              <a
+                className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium"
+                href="#about"
+              >
                 About
               </a>
-              <a className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium" href="#training">
+              <a
+                className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium"
+                href="#training"
+              >
                 Training
               </a>
-              <a className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium" href="#prizes">
+              <a
+                className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium"
+                href="#prizes"
+              >
                 Prizes
-              </a>
-              <a className="text-gray-300 hover:text-[#13ec80] transition-colors text-sm font-medium" href="#faq">
-                FAQ
               </a>
             </div>
 
@@ -87,8 +100,18 @@ export default function HackathonLanding() {
                 className="text-white hover:text-[#13ec80] transition-colors"
                 aria-label="Toggle menu"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </button>
             </div>
@@ -117,13 +140,7 @@ export default function HackathonLanding() {
               >
                 Prizes
               </a>
-              <a
-                href="#faq"
-                onClick={handleMobileMenuClick}
-                className="block px-4 py-2 text-gray-300 hover:text-[#13ec80] hover:bg-[#283930]/30 transition-colors text-sm font-medium"
-              >
-                FAQ
-              </a>
+
               <div className="px-4 py-2">
                 <a
                   href="https://gdg.community.dev/events/details/google-gdg-on-campus-chukwuemeka-odumegwu-ojukwu-university-anambra-nigeria-presents-hack4coou-innovate-amp-build/"
@@ -175,11 +192,11 @@ export default function HackathonLanding() {
       {/* Team Section */}
       <TeamSection />
 
-      {/* FAQ Section */}
-      <FAQSection />
-
       {/* Footer Section */}
       <FooterSection />
+
+      {/* AI Chatbot Assistant */}
+      <AIChatbot />
     </div>
-  )
+  );
 }
