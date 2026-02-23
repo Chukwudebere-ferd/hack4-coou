@@ -11,6 +11,9 @@ import {
   Send,
   ChevronDown,
   MessageSquare,
+  Calendar,
+  Trophy,
+  Info,
 } from "lucide-react";
 
 interface Message {
@@ -19,6 +22,69 @@ interface Message {
   text: string;
   timestamp: Date;
 }
+
+// Icon mapping for AI responses
+const IconMap = {
+  BOT: Bot,
+  STAR: Sparkles,
+  CAL: Calendar,
+  WIN: Trophy,
+  INFO: Info,
+  // Hallucination mappings
+  robot: Bot,
+  mobile: Sparkles,
+  info: Info,
+  calendar: Calendar,
+  trophy: Trophy,
+  sparkles: Sparkles,
+};
+
+const IconRenderer = ({ text }: { text: string }) => {
+  if (!text) return null;
+
+  // Pattern 1: [I:TYPE]
+  // Pattern 2: <icon type="TYPE" /> (Hallucination fallback - more robust regex)
+  const parts = text.split(
+    /(\[I:[A-Z]+\]|<icon\s+type=["'][^"']+["']\s*\/?\s*>)/gi,
+  );
+
+  return (
+    <>
+      {parts.map((part, i) => {
+        // Match [I:TYPE]
+        const tagMatch = part.match(/\[I:([A-Z]+)\]/i);
+        if (tagMatch) {
+          const type = tagMatch[1].toUpperCase();
+          const IconComponent = IconMap[type as keyof typeof IconMap] || Info;
+          return (
+            <IconComponent
+              key={i}
+              className="inline-block w-4 h-4 mx-1.5 -mt-1 text-[#13ec80]"
+            />
+          );
+        }
+
+        // Match <icon type="TYPE" />
+        const hallucinateMatch = part.match(/<icon\s+type=["']([^"']+)["']/i);
+        if (hallucinateMatch) {
+          const type = hallucinateMatch[1].toLowerCase();
+          const IconComponent =
+            IconMap[type as keyof typeof IconMap] ||
+            IconMap[type.toUpperCase() as keyof typeof IconMap] ||
+            Info;
+          return (
+            <IconComponent
+              key={i}
+              className="inline-block w-4 h-4 mx-1.5 -mt-1 text-[#13ec80]"
+            />
+          );
+        }
+
+        return <span key={i}>{part}</span>;
+      })}
+    </>
+  );
+};
 
 export function AIChatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -247,7 +313,7 @@ export function AIChatbot() {
                     border: "1px solid #1e2328",
                   }}
                 >
-                  {chatbotConfig.welcomeMessage}
+                  <IconRenderer text={chatbotConfig.welcomeMessage} />
                 </div>
               </div>
             )}
@@ -281,7 +347,7 @@ export function AIChatbot() {
                       : undefined
                   }
                 >
-                  {msg.text}
+                  <IconRenderer text={msg.text} />
                 </div>
                 {msg.role === "user" && (
                   <div className="w-7 h-7 rounded-full bg-[#13ec80]/20 flex items-center justify-center text-xs shrink-0 mt-1">
