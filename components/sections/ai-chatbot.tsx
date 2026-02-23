@@ -2,6 +2,16 @@
 
 import { useState, useRef, useEffect } from "react";
 import { chatbotConfig } from "@/data/chatbot-data";
+import {
+  Bot,
+  Sparkles,
+  Unplug,
+  User,
+  X,
+  Send,
+  ChevronDown,
+  MessageSquare,
+} from "lucide-react";
 
 interface Message {
   id: string;
@@ -76,7 +86,7 @@ export function AIChatbot() {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        text: "Oops! I couldn't connect. Please check your internet and try again. 🔌",
+        text: "Oops! I couldn't connect. Please check your internet and try again.",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);
@@ -111,33 +121,9 @@ export function AIChatbot() {
         aria-label={isOpen ? "Close chat" : "Open AI assistant"}
       >
         {isOpen ? (
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <X className="w-6 h-6 text-white" />
         ) : (
-          <svg
-            className="w-7 h-7 text-[#0B0C10]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z"
-            />
-          </svg>
+          <Sparkles className="w-7 h-7 text-[#0B0C10]" />
         )}
       </button>
 
@@ -159,19 +145,7 @@ export function AIChatbot() {
                 boxShadow: "0 4px 15px rgba(19, 236, 128, 0.3)",
               }}
             >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
+              <MessageSquare className="w-4 h-4" />
               Ask me anything!
               {/* Arrow pointing right */}
               <div
@@ -235,8 +209,8 @@ export function AIChatbot() {
             }}
           >
             <div className="relative">
-              <div className="w-10 h-10 rounded-full bg-[#283930] flex items-center justify-center text-lg">
-                {chatbotConfig.avatar}
+              <div className="w-10 h-10 rounded-full bg-[#283930] flex items-center justify-center text-lg text-[#13ec80]">
+                <Bot size={24} />
               </div>
               <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-[#13ec80] rounded-full border-2 border-[#0d0e13]" />
             </div>
@@ -244,26 +218,16 @@ export function AIChatbot() {
               <h3 className="text-white font-semibold text-sm truncate">
                 {chatbotConfig.name}
               </h3>
-              <p className="text-[#13ec80] text-xs">Powered by Gemini AI ✨</p>
+              <p className="text-[#13ec80] text-xs flex items-center gap-1">
+                <Sparkles size={12} /> Powered by Gemini AI
+              </p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
               className="text-gray-500 hover:text-white transition-colors p-1"
               aria-label="Close chat"
             >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+              <ChevronDown className="w-5 h-5" />
             </button>
           </div>
 
@@ -272,8 +236,8 @@ export function AIChatbot() {
             {/* Welcome message */}
             {messages.length === 0 && (
               <div className="flex gap-3">
-                <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1">
-                  {chatbotConfig.avatar}
+                <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1 text-[#13ec80]">
+                  <Bot size={16} />
                 </div>
                 <div
                   className="rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%] text-sm leading-relaxed"
@@ -297,8 +261,8 @@ export function AIChatbot() {
                 }`}
               >
                 {msg.role === "assistant" && (
-                  <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1">
-                    {chatbotConfig.avatar}
+                  <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1 text-[#13ec80]">
+                    <Bot size={16} />
                   </div>
                 )}
                 <div
@@ -321,13 +285,7 @@ export function AIChatbot() {
                 </div>
                 {msg.role === "user" && (
                   <div className="w-7 h-7 rounded-full bg-[#13ec80]/20 flex items-center justify-center text-xs shrink-0 mt-1">
-                    <svg
-                      className="w-4 h-4 text-[#13ec80]"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
+                    <User className="w-4 h-4 text-[#13ec80]" />
                   </div>
                 )}
               </div>
@@ -336,8 +294,8 @@ export function AIChatbot() {
             {/* Loading indicator */}
             {isLoading && (
               <div className="flex gap-3">
-                <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1">
-                  {chatbotConfig.avatar}
+                <div className="w-7 h-7 rounded-full bg-[#283930] flex items-center justify-center text-xs shrink-0 mt-1 text-[#13ec80]">
+                  <Bot size={16} />
                 </div>
                 <div
                   className="rounded-2xl rounded-tl-sm px-4 py-3"
@@ -412,23 +370,13 @@ export function AIChatbot() {
                 }}
                 aria-label="Send message"
               >
-                <svg
+                <Send
                   className={`w-5 h-5 ${
                     input.trim() && !isLoading
                       ? "text-[#0B0C10]"
                       : "text-gray-600"
                   }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                  />
-                </svg>
+                />
               </button>
             </div>
           </form>

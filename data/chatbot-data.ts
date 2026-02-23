@@ -1,8 +1,8 @@
 export const chatbotConfig = {
   name: "Hack4COOU AI Assistant",
-  avatar: "🤖",
+  avatar: "bot",
   welcomeMessage:
-    "Hey there! 👋 I'm the Hack4COOU AI Assistant. Ask me anything about the hackathon — dates, prizes, training, registration, and more!",
+    "Hey there! I'm the Hack4COOU AI Assistant. Ask me anything about the hackathon — dates, prizes, training, registration, and more!",
   suggestedQuestions: [
     "When does the hackathon start?",
     "How do I register?",
@@ -70,8 +70,8 @@ A: Yes! Teams of 2–4 members. If you don't have a team, there's a team-buildin
 - COOU Techies
 
 ## RULES
-- Keep answers concise, friendly, and use emojis sparingly for energy.
-- If a question is outside your knowledge, say: "I don't have that info yet, but you can reach out to the hackathon team for more details! "
+- Keep answers concise and friendly. Use icons for formatting where appropriate, but never raw emojis.
+- If a question is outside your knowledge, say: "I don't have that info yet, but you can reach out to the hackathon team for more details!"
 - Always encourage users to register if they haven't.
 - Never make up information. Only use the facts provided above.
 - Format response in short paragraphs, use bullet points if listing items.
